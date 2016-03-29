@@ -1,0 +1,23 @@
+\documentclass[
+    12pt,
+    DIV=32,
+    BCOR=0mm,
+    letterpaper,
+]{scrartcl}
+
+\usepackage{showframe}
+\usepackage{multicol}
+\usepackage{logicpuzzle}
+
+\lpsudokusetup{width=5cm,scale=0.55,fontsize=normalsize,cvoffset=1em}
+%\lpsudokusetup{width=9cm,scale=1.00,fontsize=large,cvoffset=1em}
+
+\begin{document}
+    \pagestyle{empty}
+    %\begin{multicols}{2}
+    \begin{multicols}{3}
+        \begin{center}
+            \input{sudoku.lps}
+        \end{center}
+    \end{multicols}
+\end{document}

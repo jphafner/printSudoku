@@ -1,0 +1,22 @@
+\documentclass[
+    12pt,
+    DIV=36,
+    BCOR=0mm,
+    letterpaper,
+]{scrartcl}
+
+\usepackage{multicol}
+\usepackage[mirror]{crop}
+
+\usepackage{logicpuzzle}
+\lpsudokusetup{width=5cm,scale=0.55,fontsize=normalsize,cvoffset=1em}
+
+\begin{document}
+    \pagestyle{empty}
+    \begin{multicols}{3}
+        \begin{center}
+            \input{sudoku_sol.lps}
+        \end{center}
+    \end{multicols}
+\end{document}
+
